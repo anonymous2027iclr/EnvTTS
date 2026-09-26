@@ -145,7 +145,7 @@
     }
 
     .audio-row.out {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       margin-top: 10px;
     }
 
@@ -199,16 +199,15 @@
 
 
     <section class="section">
-      <h2>EnvBench Examples</h2>
+      <h2>EnvTTS-Bench Examples</h2>
       <p>
-        Each EnvBench item is a triple of real recordings. The environment reference and the target come from the same
-        acoustic environment but different speakers; the speaker reference and the target come from the same speaker
+        Each EnvTTS-Bench item is a pair of real recordings. The environment reference comes from the same
+        acoustic environment but different speakers; the speaker reference comes from the same speaker
         under a different recording condition.
       </p>
       <ul class="legend">
         <li><strong>Environment Ref.</strong>: Speaker A recorded in acoustic condition A</li>
         <li><strong>Speaker Ref.</strong>: Speaker B recorded in acoustic condition B</li>
-        <li><strong>Target (GT)</strong>: Speaker B recorded in acoustic condition A (the genuine target recording)</li>
       </ul>
 
       <div class="corpus">
@@ -216,14 +215,13 @@
           <h3>AMI</h3>
           <span class="tag">Tier A</span>
           <span class="tag">English</span>
-          <span class="muted">Close-talk speaker reference, far-field environment reference and target</span>
+          <span class="muted">Close-talk speaker reference, far-field environment reference</span>
         </div>
         <div class="case">
           <div class="case-title">Example 1</div>
           <div class="audio-row">
             <div class="clip"><div class="clip-label">Environment Ref.<span class="clip-sub">Speaker A in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/ami_1/env_ref.wav"></audio></div>
             <div class="clip"><div class="clip-label">Speaker Ref.<span class="clip-sub">Speaker B in acoustic condition B</span></div><audio controls preload="none" src="./audio/benchmark/ami_1/spk_ref.wav"></audio></div>
-            <div class="clip"><div class="clip-label">Target (GT)<span class="clip-sub">Speaker B in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/ami_1/target.wav"></audio></div>
           </div>
         </div>
         <div class="case">
@@ -231,7 +229,6 @@
           <div class="audio-row">
             <div class="clip"><div class="clip-label">Environment Ref.<span class="clip-sub">Speaker A in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/ami_2/env_ref.wav"></audio></div>
             <div class="clip"><div class="clip-label">Speaker Ref.<span class="clip-sub">Speaker B in acoustic condition B</span></div><audio controls preload="none" src="./audio/benchmark/ami_2/spk_ref.wav"></audio></div>
-            <div class="clip"><div class="clip-label">Target (GT)<span class="clip-sub">Speaker B in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/ami_2/target.wav"></audio></div>
           </div>
         </div>
       </div>
@@ -241,14 +238,13 @@
           <h3>AliMeeting</h3>
           <span class="tag">Tier A</span>
           <span class="tag">Mandarin</span>
-          <span class="muted">Close-talk speaker reference, far-field environment reference and target</span>
+          <span class="muted">Close-talk speaker reference, far-field environment reference</span>
         </div>
         <div class="case">
           <div class="case-title">Example 1</div>
           <div class="audio-row">
             <div class="clip"><div class="clip-label">Environment Ref.<span class="clip-sub">Speaker A in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/alimeeting_1/env_ref.wav"></audio></div>
             <div class="clip"><div class="clip-label">Speaker Ref.<span class="clip-sub">Speaker B in acoustic condition B</span></div><audio controls preload="none" src="./audio/benchmark/alimeeting_1/spk_ref.wav"></audio></div>
-            <div class="clip"><div class="clip-label">Target (GT)<span class="clip-sub">Speaker B in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/alimeeting_1/target.wav"></audio></div>
           </div>
         </div>
         <div class="case">
@@ -256,7 +252,6 @@
           <div class="audio-row">
             <div class="clip"><div class="clip-label">Environment Ref.<span class="clip-sub">Speaker A in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/alimeeting_2/env_ref.wav"></audio></div>
             <div class="clip"><div class="clip-label">Speaker Ref.<span class="clip-sub">Speaker B in acoustic condition B</span></div><audio controls preload="none" src="./audio/benchmark/alimeeting_2/spk_ref.wav"></audio></div>
-            <div class="clip"><div class="clip-label">Target (GT)<span class="clip-sub">Speaker B in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/alimeeting_2/target.wav"></audio></div>
           </div>
         </div>
       </div>
@@ -273,7 +268,6 @@
           <div class="audio-row">
             <div class="clip"><div class="clip-label">Environment Ref.<span class="clip-sub">Speaker A in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/icsi_1/env_ref.wav"></audio></div>
             <div class="clip"><div class="clip-label">Speaker Ref.<span class="clip-sub">Speaker B in acoustic condition B</span></div><audio controls preload="none" src="./audio/benchmark/icsi_1/spk_ref.wav"></audio></div>
-            <div class="clip"><div class="clip-label">Target (GT)<span class="clip-sub">Speaker B in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/icsi_1/target.wav"></audio></div>
           </div>
         </div>
         <div class="case">
@@ -281,7 +275,6 @@
           <div class="audio-row">
             <div class="clip"><div class="clip-label">Environment Ref.<span class="clip-sub">Speaker A in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/icsi_2/env_ref.wav"></audio></div>
             <div class="clip"><div class="clip-label">Speaker Ref.<span class="clip-sub">Speaker B in acoustic condition B</span></div><audio controls preload="none" src="./audio/benchmark/icsi_2/spk_ref.wav"></audio></div>
-            <div class="clip"><div class="clip-label">Target (GT)<span class="clip-sub">Speaker B in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/icsi_2/target.wav"></audio></div>
           </div>
         </div>
       </div>
@@ -298,7 +291,6 @@
           <div class="audio-row">
             <div class="clip"><div class="clip-label">Environment Ref.<span class="clip-sub">Speaker A in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/notsofar_1/env_ref.wav"></audio></div>
             <div class="clip"><div class="clip-label">Speaker Ref.<span class="clip-sub">Speaker B in acoustic condition B</span></div><audio controls preload="none" src="./audio/benchmark/notsofar_1/spk_ref.wav"></audio></div>
-            <div class="clip"><div class="clip-label">Target (GT)<span class="clip-sub">Speaker B in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/notsofar_1/target.wav"></audio></div>
           </div>
         </div>
         <div class="case">
@@ -306,7 +298,6 @@
           <div class="audio-row">
             <div class="clip"><div class="clip-label">Environment Ref.<span class="clip-sub">Speaker A in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/notsofar_2/env_ref.wav"></audio></div>
             <div class="clip"><div class="clip-label">Speaker Ref.<span class="clip-sub">Speaker B in acoustic condition B</span></div><audio controls preload="none" src="./audio/benchmark/notsofar_2/spk_ref.wav"></audio></div>
-            <div class="clip"><div class="clip-label">Target (GT)<span class="clip-sub">Speaker B in acoustic condition A</span></div><audio controls preload="none" src="./audio/benchmark/notsofar_2/target.wav"></audio></div>
           </div>
         </div>
       </div>
@@ -315,11 +306,11 @@
     <section class="section">
       <h2>Comparison: EnvTTS-DiT vs. Cascade</h2>
       <p>
-        Both systems synthesize the same text from the same environment and speaker references drawn from EnvBench.
+        Both systems synthesize the same text from the same environment and speaker references drawn from EnvTTS-Bench.
         <strong>Cascade</strong> extracts the background from the environment reference with SAM-Audio, mixes it with
         the speaker reference at the estimated SNR, and uses the mixture as the prompt.
         <strong>EnvTTS-DiT</strong> (ours) conditions generation directly on the unseparated environment reference and a
-        separate speaker reference. The ground-truth recording is provided for reference.
+        separate speaker reference.
       </p>
 
       <div class="corpus">
@@ -331,7 +322,6 @@
             <div class="clip"><div class="clip-label">Speaker Ref.</div><audio controls preload="none" src="./audio/comparison/case_1/spk_ref.wav"></audio></div>
           </div>
           <div class="audio-row out">
-            <div class="clip"><div class="clip-label">Ground Truth</div><audio controls preload="none" src="./audio/comparison/case_1/ground_truth.wav"></audio></div>
             <div class="clip"><div class="clip-label">Cascade</div><audio controls preload="none" src="./audio/comparison/case_1/cascade.wav"></audio></div>
             <div class="clip ours"><div class="clip-label">EnvTTS-DiT (Ours)</div><audio controls preload="none" src="./audio/comparison/case_1/envtts.wav"></audio></div>
           </div>
@@ -345,7 +335,6 @@
             <div class="clip"><div class="clip-label">Speaker Ref.</div><audio controls preload="none" src="./audio/comparison/case_2/spk_ref.wav"></audio></div>
           </div>
           <div class="audio-row out">
-            <div class="clip"><div class="clip-label">Ground Truth</div><audio controls preload="none" src="./audio/comparison/case_2/ground_truth.wav"></audio></div>
             <div class="clip"><div class="clip-label">Cascade</div><audio controls preload="none" src="./audio/comparison/case_2/cascade.wav"></audio></div>
             <div class="clip ours"><div class="clip-label">EnvTTS-DiT (Ours)</div><audio controls preload="none" src="./audio/comparison/case_2/envtts.wav"></audio></div>
           </div>
@@ -359,7 +348,6 @@
             <div class="clip"><div class="clip-label">Speaker Ref.</div><audio controls preload="none" src="./audio/comparison/case_3/spk_ref.wav"></audio></div>
           </div>
           <div class="audio-row out">
-            <div class="clip"><div class="clip-label">Ground Truth</div><audio controls preload="none" src="./audio/comparison/case_3/ground_truth.wav"></audio></div>
             <div class="clip"><div class="clip-label">Cascade</div><audio controls preload="none" src="./audio/comparison/case_3/cascade.wav"></audio></div>
             <div class="clip ours"><div class="clip-label">EnvTTS-DiT (Ours)</div><audio controls preload="none" src="./audio/comparison/case_3/envtts.wav"></audio></div>
           </div>
@@ -373,7 +361,6 @@
             <div class="clip"><div class="clip-label">Speaker Ref.</div><audio controls preload="none" src="./audio/comparison/case_4/spk_ref.wav"></audio></div>
           </div>
           <div class="audio-row out">
-            <div class="clip"><div class="clip-label">Ground Truth</div><audio controls preload="none" src="./audio/comparison/case_4/ground_truth.wav"></audio></div>
             <div class="clip"><div class="clip-label">Cascade</div><audio controls preload="none" src="./audio/comparison/case_4/cascade.wav"></audio></div>
             <div class="clip ours"><div class="clip-label">EnvTTS-DiT (Ours)</div><audio controls preload="none" src="./audio/comparison/case_4/envtts.wav"></audio></div>
           </div>
@@ -387,7 +374,6 @@
             <div class="clip"><div class="clip-label">Speaker Ref.</div><audio controls preload="none" src="./audio/comparison/case_5/spk_ref.wav"></audio></div>
           </div>
           <div class="audio-row out">
-            <div class="clip"><div class="clip-label">Ground Truth</div><audio controls preload="none" src="./audio/comparison/case_5/ground_truth.wav"></audio></div>
             <div class="clip"><div class="clip-label">Cascade</div><audio controls preload="none" src="./audio/comparison/case_5/cascade.wav"></audio></div>
             <div class="clip ours"><div class="clip-label">EnvTTS-DiT (Ours)</div><audio controls preload="none" src="./audio/comparison/case_5/envtts.wav"></audio></div>
           </div>
